@@ -17,9 +17,53 @@ namespace _1_2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+     
 
+        private void showCurrentDate(object sender, EventArgs e)
+        {
+            masterLabel.Text = DateTime.Now.ToString();
+        }
+
+        private void showText_Click(object sender, EventArgs e)
+        {
+            masterLabel.Text = "HelloWorld!";
+        }
+
+        private void left_Click(object sender, EventArgs e)
+        {
+            masterLabel.TextAlign = ContentAlignment.MiddleLeft;
+        }
+
+        private void center_Click(object sender, EventArgs e)
+        {
+            masterLabel.TextAlign = ContentAlignment.MiddleCenter;
+        }
+
+        private void right_Click(object sender, EventArgs e)
+        {
+            masterLabel.TextAlign = ContentAlignment.MiddleRight;
+        }
+
+        private void greenbg_Click(object sender, EventArgs e)
+        {
+            masterLabel.BackColor = Color.Green;
+        }
+
+        private void lightBlueText_Click(object sender, EventArgs e)
+        {
+            masterLabel.ForeColor = Color.LightBlue;
+        }
+
+        private void formColor_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Yellow;
+        }
+
+        private void clearAllColor_Click(object sender, EventArgs e)
+        {
+            this.BackColor = SystemColors.Control;
+            masterLabel.ForeColor= SystemColors.ControlText;
+            masterLabel.BackColor= SystemColors.Control;
         }
     }
 }
