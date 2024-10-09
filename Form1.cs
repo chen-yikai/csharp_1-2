@@ -16,19 +16,14 @@ namespace _1_2
         {
             InitializeComponent();
         }
-
-     
-
         private void showCurrentDate(object sender, EventArgs e)
         {
             masterLabel.Text = DateTime.Now.ToString(); //顯示現在時間
         }
-
         private void showText_Click(object sender, EventArgs e)
         {
             masterLabel.Text = "HelloWorld!"; //顯示文字
         }
-
         // 文字對齊 -------------------------------------
         private void left_Click(object sender, EventArgs e)
         {
