@@ -29,7 +29,7 @@ namespace _1_2
             masterLabel.Text = "HelloWorld!"; //顯示文字
         }
 
-        // 文字對齊
+        // 文字對齊 -------------------------------------
         private void left_Click(object sender, EventArgs e)
         {
             masterLabel.TextAlign = ContentAlignment.MiddleLeft; //靠左
@@ -44,7 +44,7 @@ namespace _1_2
         {
             masterLabel.TextAlign = ContentAlignment.MiddleRight; //靠右
         }
-        //
+        // -------------------------------------
 
         private void greenbg_Click(object sender, EventArgs e)
         {
@@ -63,13 +63,11 @@ namespace _1_2
 
         private void clearAllColor_Click(object sender, EventArgs e)
         {
-            //// 恢復預設值
-            //文字
+            //文字恢復預設值
             this.BackColor = SystemColors.Control;
             masterLabel.ForeColor= SystemColors.ControlText;
-            //表單
+            //表單恢復預設值
             masterLabel.BackColor= SystemColors.Control;
-            ////
         }
     }
 }
